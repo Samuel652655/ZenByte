@@ -1,43 +1,298 @@
-<!-- BOTON -->
-<a href="#galeria" class="btn">Ver Servicios</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZenByte - Computadoras</title>
 
-<!-- GALERIA -->
-<section class="gallery" id="galeria">
+<style>
 
-    <h2>Servicios Destacados</h2>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+}
 
-    <div class="gallery-container">
+/* NAVBAR */
 
-        <!-- FOTO 1 -->
-        <div class="gallery-card">
-            <img src="img/laptop.jpg" alt="Reparación Laptop">
+nav{
+    background:#111827;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-            <div class="overlay">
-                <h3>Reparación de Laptops</h3>
-                <p>Mantenimiento, formateo y reparación.</p>
-            </div>
-        </div>
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#00d9ff;
+}
 
-        <!-- FOTO 2 -->
-        <div class="gallery-card">
-            <img src="img/iphone.jpg" alt="Reparación iPhone">
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
 
-            <div class="overlay">
-                <h3>Servicio iPhone</h3>
-                <p>Cambio de pantalla y batería.</p>
-            </div>
-        </div>
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
 
-        <!-- FOTO 3 -->
-        <div class="gallery-card">
-            <img src="img/web.jpg" alt="Desarrollo Web">
+nav ul li a:hover{
+    color:#00d9ff;
+}
 
-            <div class="overlay">
-                <h3>Desarrollo Web</h3>
-                <p>Páginas modernas y profesionales.</p>
-            </div>
-        </div>
+/* TITULO */
 
-    </div>
+.header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.header h1{
+    font-size:55px;
+    color:#00d9ff;
+}
+
+.header p{
+    color:#cbd5e1;
+    font-size:20px;
+}
+
+/* TARJETAS */
+
+.services{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:40px;
+}
+
+.card{
+    background:#1e293b;
+    width:320px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 0 15px rgba(0,0,0,0.5);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card-content h2{
+    color:#00d9ff;
+    margin-bottom:15px;
+}
+
+.card-content p{
+    color:#d1d5db;
+    line-height:1.5;
+}
+
+.status{
+    margin-top:20px;
+    display:inline-block;
+    background:#00d9ff;
+    color:black;
+    padding:8px 15px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+    color:#9ca3af;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">ZenByte</div>
+
+<ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="computadoras.html">Computadoras</a></li>
+    <li><a href="iphone.html">iPhone</a></li>
+    <li><a href="web.html">Desarrollo Web</a></li>
+</ul>
+
+</nav>
+
+<!-- TITULO -->
+
+<section class="header">
+
+<h1>Reparación de Computadoras</h1>
+
+<p>
+Soluciones rápidas, limpias y profesionales para laptops y PCs.
+</p>
 
 </section>
+
+<!-- SERVICIOS -->
+
+<section class="services">
+
+<!-- CARD 1 -->
+
+<div class="card">
+
+<img src="img/sistema.jpg">
+
+<div class="card-content">
+
+<h2>Sistema Corrompido</h2>
+
+<p>
+Laptop HP restaurada por error de arranque y archivos dañados.
+Instalación limpia de Windows y recuperación de drivers.
+</p>
+
+<span class="status">Reparado ✔</span>
+
+</div>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="card">
+
+<img src="img/lenta.jpg">
+
+<div class="card-content">
+
+<h2>Laptop Lenta</h2>
+
+<p>
+Optimización completa en laptop Dell.
+Cambio de disco HDD a SSD y limpieza interna profunda.
+</p>
+
+<span class="status">Optimizada ⚡</span>
+
+</div>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="card">
+
+<img src="img/update.jpg">
+
+<div class="card-content">
+
+<h2>Actualización de Sistema</h2>
+
+<p>
+Actualización de Windows y mejora de rendimiento
+para programas de diseño y gaming.
+</p>
+
+<span class="status">Actualizada 🔥</span>
+
+</div>
+
+</div>
+
+<!-- CARD 4 -->
+
+<div class="card">
+
+<img src="img/virus.jpg">
+
+<div class="card-content">
+
+<h2>Eliminación de Virus</h2>
+
+<p>
+Limpieza de malware, instalación de antivirus
+y protección de datos personales.
+</p>
+
+<span class="status">Protegida 🛡</span>
+
+</div>
+
+</div>
+
+<!-- CARD 5 -->
+
+<div class="card">
+
+<img src="img/pantalla.jpg">
+
+<div class="card-content">
+
+<h2>Pantalla Dañada</h2>
+
+<p>
+Cambio completo de pantalla en laptop ASUS
+con pruebas de color y funcionamiento.
+</p>
+
+<span class="status">Reemplazada ✔</span>
+
+</div>
+
+</div>
+
+<!-- CARD 6 -->
+
+<div class="card">
+
+<img src="img/calor.jpg">
+
+<div class="card-content">
+
+<h2>Problemas de Temperatura</h2>
+
+<p>
+Cambio de pasta térmica y limpieza de ventiladores
+para evitar sobrecalentamiento.
+</p>
+
+<span class="status">Enfriada ❄</span>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 ZenByte - Servicio Técnico Profesional
+</footer>
+
+</body>
+</html>
